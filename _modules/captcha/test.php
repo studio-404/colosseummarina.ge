@@ -1,0 +1,1 @@
+<p><img src="captchaImage.php" alt="Visual CAPTCHA" /></p>

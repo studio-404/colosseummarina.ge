@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mail\.indigotour\.ge$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.mail\.indigotour\.ge$
+RewriteRule ^/?$ "https\:\/\/www\.google\.com\/a\/ivandamaria\.ge" [R=301,L]
+

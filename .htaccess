@@ -1,0 +1,17 @@
+#Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine On
+#images|styles|scripts|uploads|_manager|_website|_cache|
+RewriteRule ^(images|styles|scripts|uploads|flash|_manager|_website|_cache|_javascript|.*\.(doc|docx|xls|xlsx|css|js|jpg|mp3|jpeg|gif|swf|xml|png|pdf|ico|zip|rar|php|html|txt|sql)) - [L]
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php [QSA,L]
+# block access to some sensible files
+<Files ~ "^sftp-config.json|.gitignore|.sass-cache|.htaccess|.git|node_modules">
+  Order allow,deny
+  Deny from all
+</Files>
+
+# force non-www domain
+RewriteCond %{HTTP_HOST} ^www\.question\.ge$ [NC]
+RewriteRule (.*) http://question.ge/$1 [R=301,L]
