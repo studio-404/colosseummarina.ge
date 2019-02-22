@@ -1615,3 +1615,9 @@ function main_menu2()
     return $out;
 }
 
+function selectOffers(){
+	$sql = "SELECT id,title,meta_desc,imagen,slug FROM  ".c("table.pages")." WHERE language = '" . l() . "' AND visibility = 'true' and homepage='true' and deleted=0 and menuid = 4;";
+	$offers = db_fetch_all($sql);
+
+	return $offers;
+}

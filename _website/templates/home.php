@@ -170,3 +170,10 @@
 			</div>
 		</section>-->
 		<!-- End of Special Offers -->
+
+
+<script type="text/javascript" src="<?php echo WEBSITE;?>/assets/js/gscript.js"></script>
+<script type="text/javascript">
+var offerList = <?=json_encode(selectOffers())?>;
+gofferPopup(offerList, '<?=l()?>');
+</script>

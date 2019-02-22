@@ -2,7 +2,7 @@
 define('PRODUCTION', FALSE);
 define('START_TIME', microtime(TRUE));
 define('START_MEMORY', memory_get_usage());
-require_once '_manager/bootstrap.php';
+require_once '_cadmin/bootstrap.php';
 
 // Administration
 if ($router['slug'] == c('admin.slug'))

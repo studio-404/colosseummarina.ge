@@ -1,0 +1,103 @@
+.gmask{ 
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.gwrap{
+	margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1001;
+    background-color: white;
+    top: 20px;
+    overflow-x: hidden;
+}
+
+.gitem{
+	cursor: pointer;
+	display: block;
+}
+
+.gcontainer{
+	display: block;
+	transition: all 1s ease-in-out;
+}
+
+.gitem-title{
+	margin: 10px;
+    padding: 0 10px;
+    line-height: 50px;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    position: absolute;
+    z-index: 1005;
+    background-color: rgba(0,0,0,0.4);
+    width: calc(100% - 20px);
+}
+
+.gclose{
+	margin: 0;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	z-index: 1002;
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	line-height: 30px;
+	text-align: center;
+	opacity: 0.8;
+	/*background-image: url('../img/close-128.png');
+	background-repeat: no-repeat;
+	background-size: 30px 30px;*/
+}
+.gclose:hover{
+	opacity: 1;
+}
+
+.gprev{
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	z-index: 1001;
+	cursor: pointer;
+	/*background-color: red;*/
+}
+
+.gnext{
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	z-index: 1001;
+	cursor: pointer;
+	/*background-color: red;*/
+}
+
+.gitem-image{
+	margin: 0 0 20px 0;
+	padding: 0;
+	float: left;
+}
+
+.gitem-content{
+	margin: 20px 0;
+    padding: 0 15px;
+    width: calc(100% - 30px);
+    font-size: 14px;
+}

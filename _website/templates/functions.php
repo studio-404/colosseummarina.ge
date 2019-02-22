@@ -41,7 +41,7 @@ function utf82lat2($string="")
 
 function trace($data, $title = NULL)
 {
-//    include_once DIR . '_manager/firephp/FirePHP.class.php';
+//    include_once DIR . '_cadmin/firephp/FirePHP.class.php';
 //    return FirePHP::getInstance(TRUE)->log($data, $title);
 }
 
@@ -339,8 +339,8 @@ function template($file, $variables = array())
 {
     $files = array(
         DIR . '_website/templates/' . $file . '.php',
-        DIR . '_manager/templates/' . $file . '.php',
-        DIR . '_manager/templates/default' . $file . '.php'
+        DIR . '_cadmin/templates/' . $file . '.php',
+        DIR . '_cadmin/templates/default' . $file . '.php'
     );
     foreach ($files as $template)
     {
@@ -371,8 +371,8 @@ function site_template($file, $variables = array())
 {
     $files = array(
         '_website/templates/' . $file . '.php',
-        '_manager/templates/' . $file . '.php',
-        '_manager/templates/default' . $file . '.php'
+        '_cadmin/templates/' . $file . '.php',
+        '_cadmin/templates/default' . $file . '.php'
     );
     foreach ($files as $template)
     {

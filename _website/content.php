@@ -67,6 +67,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic%7cPlayfair+Display:400,700%7cGreat+Vibes'
 		  rel='stylesheet' type='text/css'><!-- Attach Google fonts -->
 	<link rel="stylesheet" type="text/css" href="<?php echo WEBSITE;?>/assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo WEBSITE;?>/assets/css/gstyle.css">
 	<style type="text/css">
 	body,td,th {
 	font-size: 12px;
@@ -187,7 +188,7 @@ $storage->section["id"]==27 OR $storage->section["id"]==28 OR $storage->section[
 		</footer>
 		<!--End of Footer Section-->
 
-	</div>
+	</div>	
 
 	<!-- JS Include Section -->
 	<script type="text/javascript" src="<?php echo WEBSITE;?>/assets/js/jquery-3.1.0.min.js"></script>
@@ -199,7 +200,7 @@ $storage->section["id"]==27 OR $storage->section["id"]==28 OR $storage->section[
 	<script type="text/javascript" src="<?php echo WEBSITE;?>/assets/js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="<?php echo WEBSITE;?>/assets/js/template.js"></script>
     
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_v_wtA7aaRvAWFljuqdcHmjvninSm3_E&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_v_wtA7aaRvAWFljuqdcHmjvninSm3_E"></script>
 
     
 	<script type="text/javascript">
