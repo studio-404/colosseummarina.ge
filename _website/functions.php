@@ -1621,3 +1621,20 @@ function selectOffers(){
 
 	return $offers;
 }
+
+
+function checkAdminUsers(){
+	$ips = explode(",", a_s('iplist   '));
+	$myIP = $_SERVER["REMOTE_ADDR"]; 
+	
+	$out = false;
+	foreach ($ips as $ip) {
+		if($ip==$myIP){
+			$out = true;
+		}
+	}
+	
+	if(!$out){
+		die("Sorry, you don't have a permission!");
+	}
+}
